@@ -67,7 +67,7 @@ The analysis is briefly described below:
         1. Read data
     1. Merge subject data
 1. **Data tidying**
-    1. Perform some substitutions to improve column names
+    1. Perform some substitutions to improve column names (and apply [Camel Case](http://en.wikipedia.org/wiki/CamelCase))
     1. Merge feature, activity and subject data
     1. Group by activity and subject (in this order)
     1. Calculate the mean value of each group
