@@ -27,7 +27,7 @@
 
 ## Running the analysis
 
-1. Download and unzip the dataset
+1. Download and unzip the [dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
     * The directory `UCI HAR Dataset` should be created in the working directory
 2. Place the [run_analysis.R](run_analysis.R) script in the working directory
 3. Run the script (*e.g.*, `./run_analysis.R`)
