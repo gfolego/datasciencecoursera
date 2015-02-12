@@ -74,7 +74,6 @@ The analysis is briefly described below:
     1. Finally, the generated dataset is saved to a file
 
 
-
 In order to read the dataset back into `R`, run the following code:
 
 ```R
