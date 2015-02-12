@@ -20,7 +20,7 @@
 
 ## Analysis description
 
-The script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
+The [run_analysis.R](run_analysis.R) script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
 
 The analysis is performed following the steps below:
 
