@@ -67,7 +67,7 @@ The analysis is briefly described below:
         1. Read data
     1. Merge subject data
 1. **Data tidying**
-    1. Perform some substitions to improve column names
+    1. Perform some substitutions to improve column names
     1. Merge feature, activity and subject data
     1. Group by activity and subject (in this order)
     1. Calculate the mean value of each group
@@ -87,6 +87,6 @@ The code book describing the generated dataset is available [here](CodeBook.md).
 
 ## Additional notes
 
-If you still have any [doubt](http://www.imdb.com/title/tt0918927/), before marking, please refer to the [**David's Course Project FAQ**](https://class.coursera.org/getdata-011/forum/thread?thread_id=69) thread in this session forum.
+If you still have any [doubt](http://www.imdb.com/title/tt0918927/), before marking, please refer to the [**David's Course Project FAQ**](https://class.coursera.org/getdata-011/forum/thread?thread_id=69) thread in this course session forum.
 
 
