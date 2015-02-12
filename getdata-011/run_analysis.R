@@ -1,5 +1,14 @@
 #!/usr/bin/Rscript --vanilla
 
+# This script implements the Getting and Cleaning Data Course Project
+# For more information, please refer to
+#   https://github.com/gfolego/datasciencecoursera/tree/master/getdata-011
+
+# This script makes an attempt to follow the Google's R Style Guide
+# For more information, please refer to
+#   https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml
+
+
 
 # Required libraries
 require("dplyr")

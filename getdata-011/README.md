@@ -13,6 +13,7 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 You should create one R script called run_analysis.R that does the following.
+
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
@@ -43,33 +44,45 @@ For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train
 
 The analysis is briefly described below:
 
+
 **Parse feature labels**
+
 1. Read feature labels file (`features.txt`)
 2. Select only those that have `mean()` or `std()` in the name
 
+
 **Read feature data**
+
 3. For each `X_<dataset>.txt`
     1. Read only the selected features
     2. Name columns accordingly (simultaneously)
 4. Merge `X` data
 
+
 **Parse activity labels**
+
 5. Read activity labels file `activity_labels.txt`
 6. Replace special characters with space
 7. Convert names to [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
 
+
 **Read activity data**
+
 8. For each `y_<dataset>.txt`
     1. Read data
 9. Merge `y` data
 10. Convert activity indices to labels
 
+
 **Read subject data**
+
 11. For each `subject_<dataset>.txt`
     1. Read data
 12. Merge subject data
 
+
 **Data tidying**
+
 13. Perform some substitions to improve column names
 14. Merge feature, activity and subject data
 15. Group by activity and subject (in this order)
@@ -77,7 +90,8 @@ The analysis is briefly described below:
 17. Finally, the generated dataset is saved to a file
 
 
-In order to read the dataset back into `R`, run the following:
+
+In order to read the dataset back into `R`, run the following code:
 
 ```R
 data <- read.table(file_path, header = TRUE)
