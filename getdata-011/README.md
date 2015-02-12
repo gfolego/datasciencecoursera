@@ -47,16 +47,18 @@ For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train
 The analysis, steps and tidy dataset descriptions are available at [CodeBook.md](CodeBook.md).
 Most importantly, the script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
 
-In order to read the dataset back into `R`, run the following code:
+
+## Additional notes
+
+The [source code](run_analysis.R) makes an attempt to follow [Google's R Style Guide](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
+
+In order to read the [generated tidy dataset](UCI_HAR_Dataset_Tidy.txt) back into `R`, run the following code:
 
 ```R
 # file_path is the path to the "UCI_HAR_Dataset_Tidy.txt" file
 data <- read.table(file = file_path, header = TRUE)
 View(data)
 ```
-
-
-## Additional notes
 
 If you still have any [doubt](http://www.imdb.com/title/tt0918927/), before marking, please refer to the [**David's Course Project FAQ**](https://class.coursera.org/getdata-011/forum/thread?thread_id=69) thread in this course session forum.
 
