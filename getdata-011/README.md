@@ -47,7 +47,7 @@ The analysis is briefly described below:
 
 1. **Parse feature labels**
     1. Read feature labels file (`features.txt`)
-    1. Select only those that have `mean()` or `std()` in the name
+    1. Select only those that have `mean()` or `std()` in the name (68 features in total)
 1. **Read feature data**
     1. For each `X_<dataset>.txt`
         1. Read only the selected features
