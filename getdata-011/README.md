@@ -45,6 +45,7 @@ For optimized use of processing time and memory space, the steps taken in the an
 For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas **_running the whole script takes less than 5 seconds_**.
 
 The analysis, steps and tidy dataset descriptions are available at [CodeBook.md](CodeBook.md).
+Most importantly, the script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
 
 In order to read the dataset back into `R`, run the following code:
 
