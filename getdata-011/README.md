@@ -42,37 +42,7 @@ The code makes extensive use of the *chain* (`%>%`) function, so please make you
 For optimized use of processing time and memory space, the steps taken in the analysis do not strictly follow the order in the course project description.
 For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas **_running the whole script takes less than 5 seconds_**.
 
-The analysis is briefly described below:
-
-
-1. **Parse feature labels**
-    1. Read feature labels file (`features.txt`)
-    1. Select only those that have `mean()` or `std()` in the name (68 features in total)
-1. **Read feature data**
-    1. For each `X_<dataset>.txt`
-        1. Read only the selected features
-        1. Name columns accordingly (simultaneously)
-    1. Merge `X` data
-1. **Parse activity labels**
-    1. Read activity labels file `activity_labels.txt`
-    1. Replace special characters with space
-    1. Convert names to [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
-1. **Read activity data**
-    1. For each `y_<dataset>.txt`
-        1. Read data
-    1. Merge `y` data
-    1. Convert activity indices to labels
-1. **Read subject data**
-    1. For each `subject_<dataset>.txt`
-        1. Read data
-    1. Merge subject data
-1. **Data tidying**
-    1. Perform some substitutions to improve column names (and apply [Camel Case](http://en.wikipedia.org/wiki/CamelCase))
-    1. Merge feature, activity and subject data
-    1. Group by activity and subject (in this order)
-    1. Calculate the mean value of each group
-    1. Finally, the generated dataset is saved to a file
-
+The analysis, steps and tidy dataset descriptions are available at [CodeBook.md](CodeBook.md).
 
 In order to read the dataset back into `R`, run the following code:
 
@@ -80,8 +50,6 @@ In order to read the dataset back into `R`, run the following code:
 data <- read.table(file = file_path, header = TRUE)
 View(data)
 ```
-
-The code book describing the generated dataset is available [here](CodeBook.md).
 
 
 ## Additional notes
