@@ -50,6 +50,7 @@ Most importantly, the script starts with the assumption that the Samsung data is
 In order to read the dataset back into `R`, run the following code:
 
 ```R
+# file_path is the path to the "UCI_HAR_Dataset_Tidy.txt" file
 data <- read.table(file = file_path, header = TRUE)
 View(data)
 ```
