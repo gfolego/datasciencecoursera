@@ -25,22 +25,68 @@ Good luck!
 ## Running the analysis
 
 1. Download and unzip the dataset
-    * The folder "UCI HAR Dataset" should be created in the working directory
-2. Place the [run_analysis.R] script in the working directory
+    * The directory `UCI HAR Dataset` should be created in the working directory
+2. Place the [run_analysis.R](run_analysis.R) script in the working directory
 3. Run the script (*e.g.*, `./run_analysis.R`)
-4. The tidy dataset will be saved in a file named "UCI_HAR_Dataset_Tidy.txt"
+
+The tidy dataset will be saved in a file named `UCI_HAR_Dataset_Tidy.txt`.
+The code book for the generated dataset is available at [CodeBook.md](CodeBook.md).
 
 
 ## Implementation details
 
+This script requires the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package.
+This script makes extensive use of the *chain* (`%>%`) function, so please make yourself familiar with it before proceeding.
+
+For optimized use of processing time and memory space, the steps taken in the analysis do not strictly follow the order in the course project description.
+For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas running the whole script takes less than 5 seconds.
+
+The analysis is briefly described below:
+
+**Parse feature labels**
+1. Read feature labels file (`features.txt`)
+2. Select only those that have `mean()` or `std()` in the name
+
+**Read feature data**
+3. For each `X_<dataset>.txt`
+    1. Read only the selected features
+    2. Name columns accordingly (simultaneously)
+4. Merge `X` data
+
+**Parse activity labels**
+5. Read activity labels file `activity_labels.txt`
+6. Replace special characters with space
+7. Convert names to [Camel Case](http://en.wikipedia.org/wiki/CamelCase)
+
+**Read activity data**
+8. For each `y_<dataset>.txt`
+    1. Read data
+9. Merge `y` data
+10. Convert activity indices to labels
+
+**Read subject data**
+11. For each `subject_<dataset>.txt`
+    1. Read data
+12. Merge subject data
+
+**Data tidying**
+13. Perform some substitions to improve column names
+14. Merge feature, activity and subject data
+15. Group by activity and subject (in this order)
+16. Calculate the mean value of each group
+17. Finally, the generated dataset is saved to a file
 
 
+In order to read the dataset back into `R`, run the following:
 
-
+```R
+data <- read.table(file_path, header = TRUE)
+View(data)
+```
 
 
 ## Additional notes
 
-If you still have any question, before marking, please refer to the [*David's Course Project FAQ*](https://class.coursera.org/getdata-011/forum/thread?thread_id=69) thread in this session forum.
+If you still have any [doubt](http://www.imdb.com/title/tt0918927/), before marking, please refer to the [**David's Course Project FAQ**](https://class.coursera.org/getdata-011/forum/thread?thread_id=69) thread in this session forum.
 
 
