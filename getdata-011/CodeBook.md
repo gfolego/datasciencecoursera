@@ -52,7 +52,7 @@ The analysis is performed following the steps below:
     1. Calculate the mean value of each group
     1. Finally, the generated dataset is saved to a file
 
-The tidy dataset will be saved in a file named [UCI_HAR_Dataset_Tidy.txt](UCI_HAR_Dataset_Tidy.txt) in the working directory.
+The generated tidy dataset will be saved in a file named [UCI_HAR_Dataset_Tidy.txt](UCI_HAR_Dataset_Tidy.txt) in the working directory.
 
 
 ## Data variables
