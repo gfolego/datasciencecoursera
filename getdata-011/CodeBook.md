@@ -20,6 +20,10 @@
 
 ## Analysis description
 
+The script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
+
+The analysis is performed following the steps below:
+
 1. **Parse feature labels**
     1. Read feature labels file (`features.txt`)
     1. Select only those that have `mean()` or `std()` in the name (68 features in total)
@@ -48,8 +52,18 @@
     1. Calculate the mean value of each group
     1. Finally, the generated dataset is saved to a file
 
+The tidy dataset will be saved in a file named `UCI_HAR_Dataset_Tidy.txt`.
+
 
 ## Data variables
+
+Variable `Activity` is of class `character` and `SubjectID` is of class `integer`.
+
+`Activity` is one of: Laying, Sitting, Standing, Walking, Walking Downstairs, Walking Upstairs.
+
+`SubjectID` is a number between 1 and 30.
+
+All the other variables are of class `numeric`.
 
 1. Activity
 1. SubjectID
