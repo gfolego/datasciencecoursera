@@ -9,7 +9,6 @@
 #   https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml
 
 
-
 # Required libraries
 require("dplyr")
 
