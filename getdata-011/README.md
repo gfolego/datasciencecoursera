@@ -39,7 +39,7 @@ The code book for the generated dataset is available at [CodeBook.md](CodeBook.m
 ## Implementation details
 
 This script requires the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package.
-The code makes extensive use of the *chain* (`%>%`) function, so please make yourself familiar with it before proceeding.
+The code makes extensive use of the *chain* (`%>%`) function, so please make yourself familiar with it before reading the source file.
 
 For optimized use of processing time and memory space, the steps taken in the analysis do not strictly follow the order in the course project description.
 For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas **_running the whole script takes less than 5 seconds_**.
