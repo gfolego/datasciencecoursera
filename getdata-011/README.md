@@ -32,7 +32,7 @@
 2. Place the [run_analysis.R](run_analysis.R) script in the working directory
 3. Run the script (*e.g.*, `./run_analysis.R`)
 
-The tidy dataset will be saved in a file named `UCI_HAR_Dataset_Tidy.txt`.
+The tidy dataset will be saved in a file named `UCI_HAR_Dataset_Tidy.txt` in the working directory.
 The code book for the generated dataset is available at [CodeBook.md](CodeBook.md).
 
 
