@@ -39,10 +39,10 @@ The code book for the generated dataset is available at [CodeBook.md](CodeBook.m
 ## Implementation details
 
 This script requires the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package.
-The code makes extensive use of the *chain* (`%>%`) function, so please make yourself familiar with it before reading the source file.
+The code makes extensive use of the *chain* (`%>%`) function, so please make yourself familiar with it before reading the [source file](run_analysis.R).
 
 For optimized use of processing time and memory space, the steps taken in the analysis do not strictly follow the order in the course project description.
-For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas **_running the whole script takes less than 5 seconds_**.
+For comparison, simply running `read.table(file = "UCI HAR Dataset/train/X_train.txt")` takes around 25 seconds, whereas **_running the entire implemented script takes less than 5 seconds_**.
 
 The analysis, steps and tidy dataset descriptions are available at [CodeBook.md](CodeBook.md).
 Most importantly, the script starts with the assumption that the Samsung data is available in the working directory in an unzipped `UCI HAR Dataset` directory.
