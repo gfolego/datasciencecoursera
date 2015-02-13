@@ -57,10 +57,10 @@ The generated tidy dataset will be saved in a file named [UCI_HAR_Dataset_Tidy.t
 
 ## Data variables
 
-- Variable `Activity` is of class `Factor` and `SubjectID` is of class `integer`.
+- Variable `Activity` is of class `Factor` (if reading using the [suggested code](README.md#additional-notes)) and `SubjectID` is of class `integer`.
 - All the other variables are of class `numeric`.
 - `Activity` levels are: `Laying`, `Sitting`, `Standing`, `Walking`, `Walking Downstairs` and `Walking Upstairs`.
-- `SubjectID` is a number between 1 and 30.
+- `SubjectID` is a number between `1` and `30`.
 - Variable name transformations are performed in [lines 98-109 of run_analysis.R](run_analysis.R#L98-L109). The resulting names should be straightforward to understand, given the [feature description](#feature-description) above. Please keep in mind that the values are actually the average of each variable for each activity and each subject, as described in the [project description](README.md#course-project).
 
 The variables are presented in the [generated tidy dataset](UCI_HAR_Dataset_Tidy.txt) in the following order, with their respective names:
