@@ -2,6 +2,7 @@
 ## Data Science
 
 #### Course 1: The Data Scientist’s Toolbox
+* [The Leek group guide to data sharing](https://github.com/gfolego/datasharing)
 
 #### Course 2: R Programming
 * [Programming Assignment 2](https://github.com/gfolego/ProgrammingAssignment2)
@@ -12,6 +13,9 @@
 #### Course 4: Exploratory Data Analysis
 * [Plotting Assignment 1](https://github.com/gfolego/ExData_Plotting1)
 
+===
+
+#### :construction: To be done ...
 
 #### Course 5: Reproducible Research
 
