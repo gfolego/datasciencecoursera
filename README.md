@@ -13,11 +13,13 @@
 #### Course 4: Exploratory Data Analysis
 * [Plotting Assignment 1](https://github.com/gfolego/ExData_Plotting1)
 
+#### Course 5: Reproducible Research
+* [Peer Assessment 1](https://github.com/gfolego/RepData_PeerAssessment1)
+* [Peer Assessment 2](http://rpubs.com/gfolego/repdata-036)
+
 ===
 
 #### :construction: To be done ...
-
-#### Course 5: Reproducible Research
 
 #### Course 6: Statistical Inference
 
