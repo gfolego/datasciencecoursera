@@ -17,11 +17,11 @@
 * [Peer Assessment 1](https://github.com/gfolego/RepData_PeerAssessment1)
 * [Peer Assessment 2](http://rpubs.com/gfolego/repdata-036)
 
+#### Course 6: Statistical Inference
+
 ===
 
 #### :construction: To be done ...
-
-#### Course 6: Statistical Inference
 
 #### Course 7: Regression Models
 
