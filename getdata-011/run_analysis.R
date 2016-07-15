@@ -2,7 +2,7 @@
 
 
 # run_analysis.R
-# Copyright (C) 2015 Guilherme A. Fôlego (gfolego@gmail.com)
+# Copyright (C) 2015 Guilherme Folego (gfolego@gmail.com)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
