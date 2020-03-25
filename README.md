@@ -19,11 +19,11 @@
 
 #### Course 6: Statistical Inference
 
+#### Course 7: Regression Models
+
 ===
 
 #### :construction: To be done ...
-
-#### Course 7: Regression Models
 
 #### Course 8: Practical Machine Learning
 
