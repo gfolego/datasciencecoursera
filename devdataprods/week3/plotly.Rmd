@@ -1,0 +1,37 @@
+---
+title: "Developing Data Products - R Markdown Presentation & Plotly"
+author: "Guilherme Folego"
+date: "2020-03-28"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Summary
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+Today is `r Sys.Date()`
+
+
+## Code
+
+```{r code, echo=TRUE, message=FALSE, results='hide'}
+library(plotly)
+data("chickwts")
+fig <- plot_ly(chickwts, y=~weight, color=~feed, type="box")
+fig <- fig %>% layout(title = 'Chicken Weights by Feed Type',
+                      xaxis = list(title = 'Feed Type'),
+                      yaxis = list(title = 'Weight (g)'))
+fig
+```
+
+## Plot
+
+```{r plot}
+fig
+```
+
+## Thanks
