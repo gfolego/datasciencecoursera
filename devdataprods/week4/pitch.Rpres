@@ -1,3 +1,9 @@
+<style>
+.section .reveal .state-background{
+background-color: black;
+}
+</style>
+
 Developing Data Products -  Reproducible Pitch
 ========================================================
 author: Guilherme Folego
