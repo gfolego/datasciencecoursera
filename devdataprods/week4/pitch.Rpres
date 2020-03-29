@@ -1,0 +1,54 @@
+Developing Data Products -  Reproducible Pitch
+========================================================
+author: Guilherme Folego
+date: 2020-03-29
+autosize: true
+
+Shiny Application
+========================================================
+
+This is the link to our Shiny app:
+<https://gfolego.shinyapps.io/devdataprods/>
+
+In this app, we can explore the `trees` dataset
+
+```{r data}
+data("trees")
+summary(trees)
+```
+
+Correlation
+========================================================
+
+The app provides options to explore correlations between each variable.
+
+```{r correlation}
+cor(trees)
+```
+
+With the code above, we can see that the highest correlation is
+between variables `Girth` and `Volume`.
+
+
+Linear Model
+========================================================
+
+Besides correlation, the app also provides values for slope and intercept
+of a linear model fitted with these variables.
+
+```{r model}
+model <- lm(Volume ~ Girth, trees)
+coef(model)
+```
+
+Plot
+========================================================
+
+With the selected variables and fitted linear model, the
+Shiny app also produces a plot.
+
+```{r plot, echo=FALSE, fig.align='center'}
+plot(Volume ~ Girth, trees,
+     pch = 20, col="blue")
+abline(model, col="red")
+```
