@@ -21,12 +21,12 @@
 
 #### Course 7: Regression Models
 
-===
-
-#### :construction: To be done ...
-
 #### Course 8: Practical Machine Learning
 
 #### Course 9: Developing Data Products
 
-#### :lock: Data Science Capstone
+===
+
+#### :construction: To be done ...
+
+#### Data Science Capstone
