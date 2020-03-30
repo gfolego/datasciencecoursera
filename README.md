@@ -22,8 +22,12 @@
 #### Course 7: Regression Models
 
 #### Course 8: Practical Machine Learning
+* [Prediction Assignment](https://gfolego.github.io/datasciencecoursera/index.html)
 
 #### Course 9: Developing Data Products
+* [R Markdown and Leaflet](https://gfolego.github.io/datasciencecoursera/devdataprods/week2/leaflet.html)
+* [R Markdown Presentation & Plotly](https://gfolego.github.io/datasciencecoursera/devdataprods/week3/plotly.html)
+* [Course Project](https://gfolego.github.io/datasciencecoursera/devdataprods/week4/pitch.html)
 
 ===
 
