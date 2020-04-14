@@ -29,8 +29,8 @@
 * [R Markdown Presentation & Plotly](https://gfolego.github.io/datasciencecoursera/devdataprods/week3/plotly.html)
 * [Course Project](https://gfolego.github.io/datasciencecoursera/devdataprods/week4/pitch.html)
 
-===
-
-#### :construction: To be done ...
-
 #### Data Science Capstone
+* [Milestone Report](https://rpubs.com/gfolego/data-science-project)
+* [Final Project App](https://gfolego.shinyapps.io/CapstoneApp/)
+* [Final Project Presentation](https://rpubs.com/gfolego/capstone)
+
